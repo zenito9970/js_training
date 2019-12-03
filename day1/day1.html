@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>1日目</title>
+    <script type="text/javascript" src="day1.js"></script>
+</head>
+<body>
+    <h1>1日目</h1>
+
+    <div>
+        <button onclick="displayHello_forin()">Hello, World!を表示 (for-in)</button>
+        <button onclick="eraseHello_forin()">Hello, World!を非表示 (for-in)</button>
+    </div>
+    <div>
+        <button onclick="displayHello_forEach()">Hello, World!を表示 (forEach)</button>
+        <button onclick="eraseHello_forEach()">Hello, World!を非表示 (forEach)</button>
+    </div>
+    <div>
+        <button onclick="displayHello_forof()">Hello, World!を表示 (for-of)</button>
+        <button onclick="eraseHello_forof()">Hello, World!を非表示 (for-of)</button>
+    </div>
+    <div>
+        <button onclick="displayHello_for()">Hello, World!を表示 (for)</button>
+        <button onclick="eraseHello_for()">Hello, World!を非表示 (for)</button>
+    </div>
+
+    <div>
+        <p class="hello"></p>
+        <p class="hello"></p>
+        <p class="hello"></p>
+        <p class="hello"></p>
+        <p class="hello"></p>
+        <p class="hello"></p>
+        <p class="hello"></p>
+        <p class="hello"></p>
+    </div>
+
+    <hr>
+
+    <h2>for-in と for-of で挙動が異なる</h2>
+    <p>
+        for-in は値をコピーして使うっぽい？破壊的操作は行えない（元の配列の要素には反映されない）．<br>
+        forEach も同様に，破壊的操作は行えない．<br>
+        for-of は参照を取るっぽくて，破壊的操作が可能．<br>
+        for は index アクセスなので当然破壊的操作が可能．<br>
+    </p>
+
+    <a href="../index.html">top page</a>
+</body>
+</html>
