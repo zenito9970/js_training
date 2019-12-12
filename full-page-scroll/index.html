@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Full page scroll test</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script type="text/javascript" src="scroll.js"></script>
+</head>
+<body>
+    <div class="full-page-scroll">
+        <section id="section1" class="section section1">
+            <h1>全画面表示でスクロールすると右のやつがついてくるやつ</h1>
+            <p>
+                ちょっとスクロールして止めると勝手に下にスクロールする．<br>
+                前にしばらく流行ったよね．UX最悪すぎて最近は嫌われてるけど．<br>
+            </p>
+        </section>
+        <section id="section2" class="section section2">
+            <h2>参考ページ</h2>
+            <p>
+                <a href="https://ics.media/entry/191211/">モダンなJSとCSSで作るライブラリ不要の全画面スクロール演出（2019年版）</a><br>
+                ほぼこれの写経<br>
+            </p>
+        </section>
+        <section id="section3" class="section section3">
+            <p>
+                bootstrapとかで見かけて苦しんでた「classにactiveがあるかどうかで表示が変わる」みたいなやつの扱い方がようやくわかった．<br>
+                前は裏でテンプレートエンジンに食わせてactiveつけるとかで無理やりやってたけど，jsでclassListをいじれるのね……．<br>
+                あと，document.querySelectorってやつめちゃめちゃ便利じゃない？？すごい
+            </p>
+        </section>
+        <section id="section4" class="section section4">
+            <p>
+                これに全画面で写真入れるとエモい感じになるっぽい？<br>
+                とりあえず最小限の要素で実装してみたからやってないのだけど
+            </p>
+        </section>
+        <section id="section5" class="section section5">
+            <p>
+                ところでcssのwidthとかに指定する100%と100vwとの違いを初めて知りました．
+            </p>
+        </section>
+    </div>
+    <nav id="pagination" class="pagination">
+        <a id="pagination1" href="#section1"></a>
+        <a id="pagination2" href="#section2"></a>
+        <a id="pagination3" href="#section3"></a>
+        <a id="pagination4" href="#section4"></a>
+        <a id="pagination5" href="#section5"></a>
+    </nav>
+</body>
+</html>
